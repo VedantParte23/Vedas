@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #0a0a0f;
+  min-height: 100vh;
+  overflow-y: scroll;
+  color: #f5e6cc;
+  font-family: "Cormorant Garamond", serif;
+}
+
+/* Header section */
+
+.head {
+  text-align: center;
+  padding: 60px 20px;
+}
+.head h1 {
+  font-size: 28px;
+  font-weight: 500;
+}
+.head h2 {
+  font-size: 50px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.sanskrit {
+  font-family: "Noto Serif Devanagari", serif;
+  font-size: 1.4rem;
+  margin-top: 45px;
+}
+.english {
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+#summary {
+  margin-top: 17px;
+  font-size: 15px;
+}
+.corner {
+  font-size: 15px;
+  text-align: right;
+  font-style: italic;
+}
+
+.subclass {
+  margin-top: 17px;
+  font-size: 13px;
+}
+
+/* Card container */
+
+.card {
+  margin-top: 45px;
+  height: 850px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px 25px;
+  background-color: #0a0a0f;
+  transition: all 0.9s ease;
+}
+
+/* Individual cards */
+
+.card > div {
+  flex: 1;
+  height: 350px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 15px;
+}
+.card h2 {
+  font-size: 30px;
+  color: #f5e6cc;
+}
+
+/* Hover effects */
+
+.card:hover > div {
+  opacity: 0.2;
+  transform: scale(0.9);
+}
+.card > div:hover {
+  flex: 4;
+  opacity: 1;
+  transform: scale(1);
+}
+.button {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.card:hover .button {
+  opacity: 1;
+}
+.button {
+  text-decoration: none;
+  margin-top: 20px;
+  font-size: 25px;
+  color: #f5e6cc;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+}
+.foot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0a0a0f;
+  padding: 60px 20px;
+  color: #f5e6cc;
+  text-align: center;
+  border-top: 1px solid rgba(245, 230, 204, 0.15);
+}
+
+.foot h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 35px;
+  letter-spacing: 1px;
+}
+
+/* Icons + Contact info row */
+.footer_row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer_item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.1rem;
+  color: #f5e6cc;
+  transition: color 0.3s ease;
+}
+
+.footer_item:hover {
+  color: #e3c79a;
+}
+
+.footer_images img {
+  width: 35px;
+  height: 35px;
+  filter: brightness(0) invert(0.9);
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+}
+
+.footer_item:hover img {
+  transform: scale(1.15);
+  filter: brightness(1) invert(0.8);
+}
