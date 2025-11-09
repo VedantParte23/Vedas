@@ -1,0 +1,1 @@
+alert("Please also read the information cause it's not AI generated and I've done research and wrote it. Don't forget to click on learn more")
