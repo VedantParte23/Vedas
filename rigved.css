@@ -113,6 +113,7 @@ header {
   color: #e8d8b4;
   max-width: 850px;
   margin-inline: auto;
+  font-style: italic;
 }
 
 .shloka{
@@ -137,4 +138,43 @@ hr{
 
 main{
   height: 2000px;
+  text-align: center;
 }
+
+rig_division{
+  margin-top: 100px;
+}
+
+.images{
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  gap: 10px;
+}
+
+.extra{
+  font-size: 1.2rem;
+}
+
+.extrainfo{
+  margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
