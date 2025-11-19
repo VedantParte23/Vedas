@@ -83,12 +83,13 @@ header {
   margin-inline: auto;
  }
 
-  .information{
+  .information,.hidden{
   font-size: 1.04rem;
   text-align: center;
   padding: 0px 45px;
   font-family: 'Times New Roman', Times, serif;
   margin-inline: auto;
+  margin-top: 15px;
  }
 
  .sanskrit {
@@ -145,6 +146,10 @@ rig_division{
   margin-top: 100px;
 }
 
+img{
+  cursor: pointer;
+}
+
 .images{
   display: flex;
   justify-content: center;
@@ -152,14 +157,31 @@ rig_division{
   gap: 10px;
 }
 
+@media (max-width: 768px) {
+  .images {
+    height: 190px;
+    width: auto;
+    gap: 5px;
+  }
+}
+
+/* For screens smaller than 480px */
+@media (max-width: 480px) {
+  .images {
+    height: 100px;
+    width: 100%;
+    gap: 3px;
+  }
+}
+
+
 .extra{
   font-size: 1.2rem;
 }
 
-.extrainfo{
-  margin-top: 50px;
+.hidden-title{
+  margin-bottom: 15px;
 }
-
 
 
 
